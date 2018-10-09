@@ -13,6 +13,14 @@
         table {border-collapse: collapse;}
     </style>
     <![endif]-->
+	<style>
+		.mi-desktop{ display: block; }
+		.mi-mobile{display: none;overflow: hidden;mso-hide: all;}
+		@media only screen and (max-device-width: 480px), screen and (max-width: 480px), screen and (orientation: landscape) and (max-width: 630px) {
+			.mi-desktop{ display: none !important; }
+			.mi-mobile{ display: block !important;}
+        }
+	</style>
 	
 </head>
 <body>
@@ -30,8 +38,16 @@
 				<!-- IMAGE PLEINE -->
 				<tr>
 					<td class="full-width-image">
+						<div class="mi-desktop" style="display: block">
 							<img src="https://raw.githubusercontent.com/yohannlorent/Responsive-newsletter/master/img/head.jpg" width="600" alt="" /> 
+						</div>
+						<!--[if !mso]><!-->
+						<div class="mi-mobile" style="display: none;  mso-hide: all; overflow: hidden;text-align:center; ">
+							toto le plus beau
+						</div>
+						<!--<![endif]-->
 					</td>
+					
 				</tr>
 				<!-- //IMAGE PLEINE -->
 				
@@ -167,7 +183,7 @@
 										<!-- ENCORE UN TABLEAU POUR LE CONTENU -->	
 										<table class="contents">
 											<tr>
-												<td align="center"><span class=""><img src="https://raw.githubusercontent.com/yohannlorent/Responsive-newsletter/master/img/picto3.jpg" width="80" alt="" /></span></td>
+												<td align="center"><span class=""><img src="https://raw.githubusercontent.com/yohannlorent/Responsive-newsletter/master/img/picto5.png" width="80" alt="" /></span></td>
 											</tr>
 											<tr>
 												<td class="text">
