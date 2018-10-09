@@ -54,6 +54,35 @@
 				max-width: 600px;
 				height: auto;
 			}
+			.inner {
+				padding: 10px;
+			}
+			p {
+				Margin: 0;
+			}
+			a {
+				color: #ee6a56;
+				text-decoration: underline;
+			}
+			.h1 {
+				font-size: 21px;
+				font-weight: bold;
+				Margin-bottom: 18px;
+			}
+			.h2 {
+				font-size: 18px;
+				font-weight: bold;
+				Margin-bottom: 12px;
+			}
+
+			/* One column layout */
+			.one-column .contents {
+				text-align: left;
+			}
+			.one-column p {
+				font-size: 14px;
+				Margin-bottom: 10px;
+			}
 	   </style>
 </head>
 <body>
@@ -67,11 +96,74 @@
 			<td>
 			<![endif]-->
 			<table class="outer" align="center">
+				
+				<!-- IMAGE PLEINE -->
 				<tr>
 					<td class="full-width-image">
-							<img src="img/head.jpg" width="600" alt="" />
+							<img src="https://raw.githubusercontent.com/yohannlorent/Responsive-newsletter/master/img/head.jpg" width="600" alt="" />
 					</td>
 				</tr>
+				<!-- //IMAGE PLEINE -->
+				
+				<!-- 1 COLONNE -->
+				<tr>
+					<td class="one-column">
+						<table width="100%">
+							<tr>
+								<td class="inner contents">
+									<p class="h1">Lorem ipsum dolor sit amet</p>
+									<p>Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- // 1 COLONNE -->
+				
+				<!-- 2 COLONNES -->
+				<tr>
+					<td class="two-column">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+							
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										[content goes here]
+									</td>
+								</tr>
+							</table>
+						</div>
+						
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+							
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										[content goes here]
+									</td>
+								</tr>
+							</table>
+						</div>						
+						
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<!-- // 2 COLONNES -->
+				
+				
+				
 			</table>
 			<!--[if (gte mso 9)|(IE)]>
 			</td>
